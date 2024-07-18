@@ -1,0 +1,9 @@
+version: '3'
+services:
+  tinder-bot:
+    build: .
+    environment:
+      - DOTENV_PATH=.env
+    volumes:
+      - .:/app
+    restart: always
